@@ -10,22 +10,58 @@
 <body>
     <div class="container">
         <div class="left">
-            <img src="./halie-west-25xggax4bSA-unsplash.jpg"alt="">
+            <div class="odin-logo">
+                <img src="./odin-lined.png" alt=""> <div class="odin-text">SIGN-UP</div>
+            </div>
+            <div class="credit-container">
+                <p class="credit">Photo by <a href="#" class="credit">Halie West</a> on <a href="#" class="credit">Unsplash</a></p>
+            </div>
         </div>
         <div class="info">
             <div class="title">
-                This is not a real online service! You know you need something <br>
-                like this in your life to help you realize your deepest dreams. <br>
-                Sign up <i>now</i> to get started.
-
+                <div class="description">
+                    This is not a real online service! You know you need something <br>
+                    like this in your life to help you realize your deepest dreams. <br>
+                    Sign up <i>now</i> to get started.
+                </div>
+                
                 <p>You <i>know</i> you want to.</p>
             </div>
             <form action="#">
                 <div class="inputs">
                     <p>Let's do this!</p>
                     <div class="input">
-                        <label for="firstName">FIRST NAME</label>
+                        <label class="label-style" for="firstName">FIRST NAME</label>
                         <input type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="input">
+                        <label class="label-style" for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div class="input">
+                        <label class="label-style" for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="input">
+                        <label class="label-style" for="phoneNumber">PHONE NUMBER</label>
+                        <input type="tel" id="phoneNumber" name="number">
+                    </div>
+                    <div class="input">
+                        <label class="label-style" for="pwd">PASSWORD</label>
+                        <input class="error" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" id="pwd" name="pwd">
+                    </div>
+                    <div class="input">
+                        <label class="label-style" for="confirmPWD">CONFIRM PASSWORD</label>
+                        <input class="error" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" id="confirmPWD" name="confirmPWD">
+                    </div>
+                </div>
+            
+                <div class="submit-section">
+                    <button type="submit" class="create">
+                        Create Account
+                    </button>
+                    <div class="login">
+                        Already have an account? <a class="login" href="#">Log in</a>
                     </div>
                 </div>
             </form>
