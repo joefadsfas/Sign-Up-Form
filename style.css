@@ -2,6 +2,28 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.odin-logo {
+    margin-top: 15rem;
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.odin-text {
+    color: white;
+    display: inline;
+    font-size: 50px;
+}
+
+img {
+    width: 7rem;
+}
+
+div.description {
+    padding-bottom: 1em;
+}
 
 body {
     margin: 0;
@@ -16,11 +38,15 @@ body {
 
 .info {
     flex-grow: 2;
+    background-color: rgb(230, 240, 240);
 }
 
 .left {
-    display: flex;
-    flex-grow: 0;
+    width: 60vw;
+    min-width: 345px;
+    height: 100vh;
+    background: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
 }
 
 .title {
@@ -36,9 +62,11 @@ body {
     margin-top: 3em;
     padding-left: 4.5rem;
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
+    background-color: white;
 }
 
 .input {
@@ -50,4 +78,77 @@ p {
     font-size: 26px;
     margin: 0;
     width: 100%;
+}
+
+.label-style {
+    font-size: 12px;
+    padding: 2px;
+}
+
+input {
+    width: 50vh;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: 1px;
+}
+
+.create {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background-color: #596D48;
+    display: inline;
+    padding-left: 46px;
+    padding-right: 46px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+button.create:hover {
+    background-color: #6d8d50;
+    cursor: pointer;
+}
+
+.submit-section {
+    margin-top: 3rem;
+    padding: 0px 2vw;
+}
+
+a.login {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+.login {
+    margin-top: 3rem;
+}
+
+p.credit{
+    margin-top: 31rem;
+    color: white;
+    font-size: 14px;
+    font-weight: 350;
+}
+
+div.credit-container {
+    text-align: center;
+}
+
+a.credit {
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+input.error:invalid {
+    outline: none;
+    border: 1px solid red;
 }
